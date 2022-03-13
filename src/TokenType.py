@@ -1,0 +1,50 @@
+from enum import Enum, unique
+
+
+@unique
+class TokenType(Enum):
+    # Single-character tokens
+    LEFT_PARTEN = ""
+    RIGHT_PARTEN = ""
+    LEFT_BRACE = "("
+    RIGHT_BRACE = ")"
+    COMMA = ","
+    DOT = "."
+    MINUS = "-"
+    PLUS = "+"
+    SEMICOLON = ";"
+    SLASH = "/"
+    STAR = "*"
+    # one or two character tokens
+    BANG = "!"
+    BANG_EQUAL = "!="
+    EQUAL_EQUAL = "=="
+    GREATER = ">"
+    GREATER_EQUAL = ">="
+    LESS = "<"
+    LESS_EQUAL = "<="
+
+    # Literals
+    IDENTIFIER = ""
+    STRING = ""
+    NUMBER = ""
+
+    # Keywords
+    AND = ""
+    CLASS  = ""
+    ELSE = ""
+    FALSE = ""
+    FUN = ""
+    FOR = ""
+    IF = ""
+    NIL = ""
+    OR = ""
+    PRINT = ""
+    RETURN = ""
+    SUPER = ""
+    THIS = ""
+    TRUE = ""
+    VAR = ""
+    WHILE = ""
+
+    EOF = ""
